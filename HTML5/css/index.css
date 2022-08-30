@@ -20,7 +20,6 @@
 /* 헤더 */
 .header {
   background: yellow;
-  height: 10vh;
 }
 
 /* 비주얼 */
@@ -33,12 +32,42 @@
 .main {
   background: blue;
   min-height: 400px;
+  padding: 30px 15px;
+  /* display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around; */
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.group {
+  background: silver;
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.group1 {
+  width: 250px;
+}
+
+.group2 {
+  width: 380px;
+  float: right;
+  /* order: 1; */
+}
+
+.group3 {
+  width: 190px;
 }
 
 /* 슬로건 */
 .slogan {
   background: lime;
-  height: 10vh;
 }
 
 /* 푸터 */
@@ -48,5 +77,4 @@
 
 .footer-inner {
   background: orange;
-  height: 10vh;
 }
