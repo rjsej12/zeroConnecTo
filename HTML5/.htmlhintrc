@@ -12,6 +12,6 @@
   "alt-require": true,
   "doctype-html5": true,
   "head-script-disabled": true,
-  "attr-value-not-empty": true,
+  "attr-value-not-empty": false,
   "tag-self-close": true
 }
