@@ -144,6 +144,7 @@ a {
   position: absolute;
   top: 47px;
   white-space: nowrap;
+  padding: 4px 0;
 }
 
 .menu-html,
