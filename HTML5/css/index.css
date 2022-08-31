@@ -1,3 +1,5 @@
+@import url("./fonts.css");
+@import url("./fontello.css");
 @import url("./normalize.css");
 @import url("./reset.css");
 
@@ -58,6 +60,7 @@ a {
   background: #fff;
   position: relative;
   padding: 0 30px;
+  border-radius: 0 0 15px 15px;
 }
 
 /* 로고 */
@@ -66,6 +69,7 @@ a {
   position: absolute;
   top: 45px;
   left: 65px;
+  z-index: 10;
 }
 
 /* 멤버 링크 모음 */
@@ -91,7 +95,99 @@ a {
 }
 
 .menu {
+  border-radius: 0 0 5px 5px;
   background: orange;
+  padding-left: 232px;
+  height: 47px;
+  border-top: 2px solid currentColor;
+  position: relative;
+  background: #ed692d
+    linear-gradient(
+      to bottom,
+      #f29730 0%,
+      #ed692d 35%,
+      #ed692d 70%,
+      #f29730 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.menu-item {
+  float: left;
+  position: relative;
+  border-left: 2px solid #fff;
+}
+
+.menu-button {
+  line-height: 45px;
+  border: 0;
+  background: transparent;
+  padding: 0 21px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
+}
+
+.is-active .menu-button {
+  color: #ff0;
+}
+
+.is-active .menu-button::after {
+  content: "";
+  background: #000;
+  display: block;
+  height: 2px;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 47px;
+  white-space: nowrap;
+}
+
+.menu-html,
+.menu-css,
+.menu-standards {
+  left: 0;
+}
+
+.menu-accessibility,
+.menu-qna,
+.menu-archive {
+  right: 0;
+}
+
+.is-active .sub-menu {
+  display: block;
+}
+
+.sub-menu li,
+.sub-menu a {
+  display: inline-block;
+}
+
+.sub-menu li {
+  margin-right: 0.2em;
+}
+
+.sub-menu a {
+  padding: 6px 8px;
+}
+
+.sub-menu a::before {
+  content: "\f192";
+  font-family: "fontello";
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sub-menu a:hover::before,
+.sub-menu a:focus::before {
+  content: "\e800";
 }
 
 /* 비주얼 */
