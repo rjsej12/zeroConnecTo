@@ -220,7 +220,7 @@ a {
 
 .visual::before,
 .visual::after {
-  content: "상자";
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -250,6 +250,8 @@ a {
   animation-name: moveEffect;
   animation-duration: 2s;
   animation-fill-mode: forwards;
+  position: relative;
+  z-index: 10;
 }
 
 /* 메인 콘텐츠 */
