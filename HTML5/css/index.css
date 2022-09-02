@@ -451,6 +451,34 @@ a {
   float: right;
 }
 
+/* 검색 */
+.search-form {
+  background: #ccc linear-gradient(to right, #ccc, #eee);
+  border: 1px solid #aaa;
+  border-bottom: 0;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.form-group {
+  display: inline-block;
+}
+
+.form-group-input {
+  width: 200px;
+  margin: 0 10px;
+}
+.search-form .button {
+  background: black;
+  color: white;
+  border-radius: 5px;
+  border: 0;
+  width: 50px;
+  padding: 5px 0;
+}
+
 /* 슬로건 */
 .slogan {
   background: lime;
