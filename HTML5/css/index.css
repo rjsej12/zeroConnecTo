@@ -254,6 +254,7 @@ a {
   animation-fill-mode: forwards;
   position: relative;
   z-index: 10;
+  display: inline-block;
 }
 
 /* 메인 콘텐츠 */
@@ -469,6 +470,86 @@ a {
 
 .search-form-inner .form-group-input {
   margin-right: 12px;
+}
+
+/* 공지사항 및 자료실 */
+.board {
+  margin-top: 20px;
+  position: relative;
+  min-height: 180px;
+}
+
+.board-tab {
+  border: 1px solid #aaa;
+  background: #ccc;
+  border-radius: 4px 4px 0 0;
+  padding: 6px 14px;
+  color: #666;
+  position: absolute;
+  top: 0;
+}
+
+.notice-tab {
+  left: 0;
+}
+
+.archive-tab {
+  left: 78px;
+}
+
+.is-select .board-tab {
+  border-color: currentColor currentColor transparent currentColor;
+  color: #ed552f;
+  background: #fff;
+}
+
+.board-panel,
+.board-more {
+  display: none;
+}
+
+.is-select .board-panel,
+.is-select .board-more {
+  display: block;
+}
+
+.board-panel {
+  padding-top: 40px;
+}
+
+.board-panel li {
+  margin-top: 12px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.board-panel a {
+  /* flex-grow: 1; */
+  width: calc(100% - 6em);
+  margin-right: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.board-panel time {
+}
+
+.board-more {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+
+/* 공통 더보기 스타일 */
+.more {
+  padding: 8px;
+}
+
+.more::before {
+  color: hsla(110, 50%, 30%, 1);
 }
 
 /* 슬로건 */
