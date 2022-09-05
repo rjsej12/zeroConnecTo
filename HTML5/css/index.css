@@ -466,9 +466,6 @@ a {
 
 .search-form-inner .form-group {
   flex-grow: 1;
-}
-
-.search-form-inner .form-group-input {
   margin-right: 12px;
 }
 

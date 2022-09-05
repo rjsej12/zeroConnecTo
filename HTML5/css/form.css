@@ -8,7 +8,8 @@
 }
 
 .form-group-label {
-  white-space: nowrap;
+  /* white-space: nowrap; */
+  flex-shrink: 0;
 }
 
 .form-group-input {
@@ -19,6 +20,8 @@
   height: 28px;
   margin-left: 12px;
   flex-grow: 1;
+  width: 100%;
+  min-width: 0;
 }
 
 /* 버튼 컴포넌트 */
