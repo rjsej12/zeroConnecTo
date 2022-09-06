@@ -654,6 +654,7 @@ a {
   background-image: url(./images/back_forward.png);
   background-repeat: no-repeat;
   padding: 18px 0 0 0;
+  line-height: 22px;
 }
 
 .event-button-wrapper button:focus {
@@ -679,8 +680,33 @@ a {
 }
 
 .related {
-  /* background: pink; */
   margin-top: 10px;
+}
+
+.related-list {
+  margin-top: 10px;
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  height: 27px;
+  overflow: hidden;
+  transition: height 400ms, padding 400ms 400ms;
+}
+
+.related-list:hover,
+.related-list:focus {
+  height: 147px;
+  padding: 10px 0;
+}
+
+.related-list a {
+  display: block;
+  line-height: 25px;
+  text-indent: 25px;
+}
+
+.related-list a:focus {
+  outline-offset: -2px;
 }
 
 /* 슬로건 */
