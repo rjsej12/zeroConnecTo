@@ -41,6 +41,7 @@
 }
 
 .searchForm__group .formInput__input {
+  appearance: none;
   width: 100%;
   height: 2rem;
   min-width: 0;
