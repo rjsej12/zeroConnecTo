@@ -277,10 +277,15 @@
   margin-top: var(--spacing-xs);
 }
 
-/* 푸터 */
+/* 공통 푸터 */
 .appFooter {
-  background-color: lime;
+  background: var(--primary-color);
+  color: var(--white);
   padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+.address {
+  margin-bottom: var(--spacing-base);
 }
 
 /* 모바일 스타일 */
@@ -402,6 +407,12 @@
   .twitter {
     width: 100%;
   }
+
+  /* 모바일 푸터 */
+  .address {
+    display: flex;
+    flex-flow: column nowrap;
+  }
 }
 
 /* 데스크탑 스타일 */
@@ -495,6 +506,11 @@
   /* 데스크탑 트위터 */
   .twitter {
     grid-area: twitter;
+  }
+
+  /* 데스크탑 푸터 */
+  .appFooter {
+    text-align: center;
   }
 }
 
